@@ -11,14 +11,14 @@ const io = require('socket.io')(http);
 
 // Rota para a página inicial
 app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname, "index.html"))
+  response.sendFile(path.join(__dirname, "/public/index.html"))
 });
 
 app.get('/style.css', (request, response) => {
-  response.sendFile(path.join(__dirname, "style.css"))
+  response.sendFile(path.join(__dirname, "/public/style.css"))
 });
 
-app.use('/imagens', express.static(path.join(__dirname, 'imagens')));
+app.use('/imagens', express.static(path.join(__dirname, '/public/imagens')));
 
 // Evento para quando o cliente se conecta ao servidor via Socket.io
 io.on('connection', (socket) => {
