@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyIndex {
+    background: center/cover url(imagens/background.png);
+
+}
+
+.container{
+    width: 550px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: dodgerblue;
+}
+
+.header h1{
+    color: white;
+    padding: 15px;
+    margin-left: 10%;
+}
+
+.perfilGrupo img{
+    width: 70px;
+    position: absolute;
+}
+
+.body{
+    flex: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+
+.message{
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message{
+    margin-left: auto;
+    background-color: white;
+    color: black;
+}
+
+.footer form{
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+
+form button:hover{
+    background-color: blue;
+}
+
+#nome{
+    margin-right: 1px;
+}
+
+#mensagem{
+    margin-right: 1px;
+}
+
+#caixaMSG{
+    margin-left: 1%;
+    margin-top: 2%;
+    
+}
+
+@media (max-width: 600px) {
+
+    form input{
+        flex: 1;
+        width: 40px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+    }
+    
+    form button{
+        width: 80px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    
+    }
+
+    .perfilGrupo img{
+        margin-top: 5px;
+        width: 60px;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .perfilGrupo img{
+        visibility: hidden;
+    }
+}
