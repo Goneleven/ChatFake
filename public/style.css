@@ -13,7 +13,7 @@ body{
 }
 
 #bodyIndex {
-    background: no-repeat center/cover url(imagens/background.png);
+    background: center/cover url(imagens/background.png);
 
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 .perfilGrupo img{
-    width: 3.5%;
+    width: 70px;
     position: absolute;
 }
 
@@ -68,7 +68,6 @@ form input{
     height: 40px;
     border: none;
     outline: none;
-    padding-left: 5px;
     font-size: 16px;
 }
 
@@ -100,4 +99,41 @@ form button:hover{
     margin-left: 1%;
     margin-top: 2%;
     
+}
+
+@media (max-width: 600px) {
+
+    form input{
+        flex: 1;
+        width: 40px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+    }
+    
+    form button{
+        width: 80px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    
+    }
+
+    .perfilGrupo img{
+        margin-top: 5px;
+        width: 60px;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .perfilGrupo img{
+        visibility: hidden;
+    }
 }
